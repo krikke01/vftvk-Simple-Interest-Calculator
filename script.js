@@ -23,7 +23,7 @@ function compute()
 function updateRate() 
 {
     var slider = document.getElementById("rate");
-    var output = document.getElementById("rate_value);
+    var output = document.getElementById("rate_value");
     output.innerHTML = slider.value; // Display the default slider value
 
     // Update the current slider value (each time you drag the slider handle)
