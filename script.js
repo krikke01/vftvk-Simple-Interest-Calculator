@@ -22,13 +22,9 @@ function compute()
       
 function updateRate() 
 {
-    var slider = document.getElementById("rate");
-    var output = document.getElementById("rate_val");
-    output.innerHTML = slider.value; // Display the default slider value
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
 
-    // Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() 
-    {
-        output.innerHTML = this.value;
-    }  
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+
 }
